@@ -45,6 +45,7 @@ resource "google_compute_instance" "ops-manager" {
       # Empty for ephemeral external IP allocation
     }
   }
+  create_timeout = 10
 }
 
 resource "google_storage_bucket" "director" {
